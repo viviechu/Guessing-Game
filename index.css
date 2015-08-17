@@ -1,0 +1,17 @@
+body {
+	background-color: #87CEEB;
+
+}
+h1 {
+	font-size: 45px;
+	text-align: center;
+	color:white;
+}
+.col-centered {
+    margin: 0 auto;
+    float: none;
+}
+#MyInput {
+	width: 100px;
+	height:30px;
+}
