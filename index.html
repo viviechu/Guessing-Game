@@ -2,29 +2,38 @@
 <html>
 	<head>
 	 	<title>Guessing Game</title>
-	 
+
 	  	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 		<link href="index.css" rel="stylesheet">
 	</head>
-
 	<body>
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-4 col-lg-offset-4">
-					<h1>Guess a number</h1>
-					<img class="displayed" src="http://i.imgur.com/drcppjk.png" style="width:150px;height:160px;">
-					<br />
-					<br />
-					<input id="MyInput" class="col-centered" type="text" value="Input Number" />
-					<br />
-					<br />
-					<input type="submit" class="btn btn-primary" value="Submit Number" />
-					<br />
-					<br />
-					<input type="button" class="btn btn-success" value="Play Again" />
-					<input type="button" class="btn btn-success" value="Give me a hint" />
-				</div>
-			</div>
+		<div class="container">						
+			<h1>Guess a number</h1>
+			<img class="photo" src="drcppjk.png" style="width:150px;height:160px;">
+			<br />
+			<br />
+			<div class="total"></div>
+			<input id="MyInput" class="col-centered" type="text" value="Input Number 1-100" />
+			<br />
+			<br />
+			<div class="hotorcold"></div>
+			<button id="MySubmit" type="button" class="btn btn-primary">Submit</button>
+			<br />
+			<br />
+			<button id="PlayAgain" type="button" class="btn btn-success" onClick="parent.location='index.html'">New Game</button>
+			<button id="Hint" type="button" class="btn btn-success">Give me a Hint</button>
+			<br />
+			<br />
+			<div class="table">
+				<table >
+					<tr class="first"></tr>
+					<tr class="second"></tr>
+				</table>
+		    </div>
+			<div id="answer"></div>
 		</div>
+
+		<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+		<script src="game.js"></script>
 	</body>
 </html>
